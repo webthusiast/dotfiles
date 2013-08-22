@@ -2,5 +2,5 @@ Dotfiles
 ========
 
 	cd ~
-	git clone <repo> .
+	git clone git@github.com:webthusiast/dotfiles.git .
 	make
