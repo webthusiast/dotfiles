@@ -2,5 +2,7 @@ Dotfiles
 ========
 
 	cd ~
-	git clone git@github.com:webthusiast/dotfiles.git .
+	git init
+	git remote add https://github.com/webthusiast/dotfiles.git
+	git pull
 	make
