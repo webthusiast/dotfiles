@@ -1,0 +1,7 @@
+# Search backward only in matching lines with ^P and ^N.
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# Search backward in all lines with arrow keys.
+"\ep": previous-history
+"\en": next-history

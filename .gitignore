@@ -3,6 +3,7 @@
 !/.bash_profile
 !/.bashrc
 !/.gitignore
+!/.inputrc
 !/.profile
 !/.vimrc
 !/README.md
