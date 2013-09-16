@@ -5,6 +5,9 @@
 !/.gitignore
 !/.inputrc
 !/.profile
+!/.vim
+!/.vim/*
+!/.vim/*/*
 !/.vimrc
 !/Makefile
 !/README.md
