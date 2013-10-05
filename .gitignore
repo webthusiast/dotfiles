@@ -1,4 +1,5 @@
 *
+
 !/.bash_logout
 !/.bash_profile
 !/.bashrc
@@ -11,3 +12,6 @@
 !/.vimrc
 !/Makefile
 !/README.md
+
+.vim/.VimballRecord
+.vim/.netrwhist
