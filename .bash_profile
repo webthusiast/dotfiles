@@ -8,6 +8,6 @@ fi
 
 # Execute ~/.bashrc if it exists.
 # Note that this shouldn't be done from ~/.profile, because ~/.bashrc might not be backward compatible with sh.
-if [ -f ~/.profile ];
-then . ~/.profile;
+if [ -f ~/.bashrc ];
+then . ~/.bashrc;
 fi
