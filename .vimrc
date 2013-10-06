@@ -49,6 +49,7 @@ autocmd! BufRead,BufNewFile *.vcf  setfiletype vcard
 autocmd! BufRead,BufNewFile *.ics  setfiletype icalendar
 autocmd! BufRead,BufNewFile *.otl  setfiletype otl
 autocmd! BufNewFile,BufRead *.less setfiletype less
+autocmd! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,nginx.conf setfiletype nginx
 
 " For django snippets for snipmate.
 autocmd FileType python set ft=python.django   " For SnipMate
