@@ -22,7 +22,7 @@ shopt -s globstar &> /dev/null
 shopt -s histappend
 
 # Aliasses
-alias ls='ls -FG'
+alias ls='ls -FG --color'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
