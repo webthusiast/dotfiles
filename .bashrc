@@ -40,3 +40,8 @@ fi
 
 # Include pythonbrew script.
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && . $HOME/.pythonbrew/etc/bashrc
+
+# Execute ~/.bash_local if it exists.
+if [ -f ~/.bashrc_local ];
+then . ~/.bashrc_local;
+fi

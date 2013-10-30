@@ -2,4 +2,4 @@
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # For MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH:/usr/sbin
