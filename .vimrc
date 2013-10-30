@@ -1,6 +1,7 @@
 syntax on
 filetype plugin on
 filetype plugin indent on
+set encoding=utf-8
 set guioptions+=b
 set ruler
 set number
