@@ -19,6 +19,8 @@ set foldcolumn=0
 
 set nocompatible
 set mouse=nvi " don't use mouse in ex-mode
+set nomodeline " it's too dangerous, enable in Session.vim if needed
+set modelines=1
 
 set ignorecase
 set smartcase
