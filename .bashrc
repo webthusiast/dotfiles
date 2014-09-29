@@ -2,6 +2,7 @@
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # For bash
+export PROMPT_COMMAND='echo [$(date +%H:%M:%S)]'
 export PS1='\u@\h \W\$ '
 export HISTFILESIZE=1000000
 export HISTSIZE=1000000
