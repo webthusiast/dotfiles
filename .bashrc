@@ -24,6 +24,7 @@ shopt -s histappend
 
 # Aliasses
 [[ $OSTYPE =~ darwin ]] && color='-G' || color='--color'
+[[ $OSTYPE =~ darwin ]] && alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 alias ls="ls -F $color"
 alias ll='ls -l'
 alias la='ls -a'
