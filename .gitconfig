@@ -3,3 +3,5 @@
 	name = Roald de Vries
 [push]
 	default = simple
+[log]
+	decorate = true
