@@ -1,3 +1,20 @@
+" Definitions
+command! Customize call Customize()
+function! Customize()
+	" For using enter instead of esc.
+	nnoremap <CR> i<CR><Esc>
+	inoremap <CR> <Esc>
+	set backspace=
+endfunction
+
+command! Decustomize call Decustomize()
+function! Decustomize()
+	iunmap <CR>
+	nunmap <CR>
+	set backspace=indent,eol,start
+endfunction
+
+" Custom functions and commands
 syntax on
 filetype plugin on
 filetype plugin indent on
@@ -9,9 +26,9 @@ set autoindent
 set cindent
 set linebreak
 
-set tabstop=4
-set noexpandtab
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 set foldmethod=indent
 set foldlevel=100
@@ -32,8 +49,7 @@ set complete+=k
 set completeopt=menu
 
 " For using enter instead of esc.
-inoremap <CR> <Esc>
-nnoremap <CR> i<CR><Esc>
+Customize
 
 " For making Y work similar to C and D.
 nnoremap Y y$
@@ -53,11 +69,21 @@ autocmd! BufRead,BufNewFile *.ics  setfiletype icalendar
 autocmd! BufRead,BufNewFile *.otl  setfiletype otl
 autocmd! BufRead,BufNewFile *.less setfiletype less
 autocmd! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,nginx.conf setfiletype nginx
+autocmd! BufRead,BufNewFile Vagrantfile setfiletype ruby
+
+" For Pathogen
+execute pathogen#infect()
+
+set background=light
+colorscheme solarized
+" Make IncSearch stand out a bit more (identical to solarized's standard Search highlighting)
+exe "hi! IncSearch term=NONE,reverse cterm=NONE,reverse ctermfg=3 ctermbg=NONE"
 
 " For django snippets for snipmate.
 autocmd FileType python set ft=python.django   " For SnipMate
 autocmd FileType python.django set omnifunc=pythoncomplete#Complete
 autocmd FileType html   set ft=htmldjango.html " For SnipMate
+autocmd FileType markdown set ts=2 sw=2 et
 
 " For rest.vim (reStructuredText) syntax highlighting.
 autocmd FileType rst set ft=rest

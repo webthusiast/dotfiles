@@ -1,15 +1,6 @@
 # Executed for interactive non-login shells.
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
-# For bash
-export PROMPT_COMMAND='echo [$(date +%H:%M:%S)]'
-export PS1='\u@\h \W\$ '
-export HISTFILESIZE=1000000
-export HISTSIZE=1000000
-export HISTTIMEFORMAT='%F %T '
-export HISTIGNORE=" *"
-export EDITOR=vim
-
 # A command name that is the name of a directory is executed as if it were the argument to the cd command.
 shopt -s autocd &> /dev/null
 
@@ -21,6 +12,12 @@ shopt -s globstar &> /dev/null
 
 # Append to the history file, don't overwrite it.
 shopt -s histappend
+
+# Don't notify of mail
+shopt -u mailwarn
+
+# Break when an undefined env var is used.
+set -u
 
 # Aliasses
 [[ $OSTYPE =~ darwin ]] && color='-G' || color='--color'
@@ -44,3 +41,6 @@ fi
 if [ -f ~/.bashrc_local ];
 then . ~/.bashrc_local;
 fi
+
+# For Solarized
+export TERM="screen-256color"

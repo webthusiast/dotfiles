@@ -5,3 +5,7 @@
 	default = simple
 [log]
 	decorate = true
+[core]
+	excludesfile = ~/.gitexclude
+[diff]
+	tool = vimdiff

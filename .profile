@@ -1,4 +1,4 @@
-# Executed for interactive login shells. Should be backward compatible with 'sh'.
+# Executed for interactive and login shells, unless using `bash` (as opposed to `sh`) and `~/.bash_profile` or `~/.bash_login` is present. Should be backward compatible with `sh`.
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # For MacPorts and homebrew

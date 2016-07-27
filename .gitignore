@@ -4,6 +4,7 @@
 !/.bash_profile
 !/.bashrc
 !/.gitconfig
+!/.gitexclude
 !/.gitignore
 !/.inputrc
 !/.profile
