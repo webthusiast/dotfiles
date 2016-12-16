@@ -14,6 +14,14 @@ function! Decustomize()
 	set backspace=indent,eol,start
 endfunction
 
+" Fix mouse for wide terminals (220+ columns)
+" See http://stackoverflow.com/questions/7000960/in-vim-why-doesnt-my-mouse-work-past-the-220th-column
+if has("mouse_sgr")
+  set ttymouse=sgr
+else
+  set ttymouse=xterm2
+end
+
 " Custom functions and commands
 syntax on
 filetype plugin on
@@ -45,6 +53,7 @@ set incsearch
 set wildmode=list:longest,full
 
 " Search in dictionaries for autocompletion.
+set complete-=i
 set complete+=k
 set completeopt=menu
 
@@ -79,14 +88,10 @@ colorscheme solarized
 " Make IncSearch stand out a bit more (identical to solarized's standard Search highlighting)
 exe "hi! IncSearch term=NONE,reverse cterm=NONE,reverse ctermfg=3 ctermbg=NONE"
 
-" For django snippets for snipmate.
-autocmd FileType python set ft=python.django   " For SnipMate
-autocmd FileType python.django set omnifunc=pythoncomplete#Complete
-autocmd FileType html   set ft=htmldjango.html " For SnipMate
-autocmd FileType markdown set ts=2 sw=2 et
-
-" For rest.vim (reStructuredText) syntax highlighting.
-autocmd FileType rst set ft=rest
+" For specific file types
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType markdown setlocal ts=2 sw=2 et
+autocmd FileType rst setlocal ft=rest
 
 " For entering a lot of text
 iabbrev lorem1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

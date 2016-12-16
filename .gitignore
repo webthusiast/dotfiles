@@ -6,6 +6,7 @@
 !/.gitconfig
 !/.gitexclude
 !/.gitignore
+!/.gitmodules
 !/.inputrc
 !/.profile
 !/.slate

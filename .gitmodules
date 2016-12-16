@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/editorconfig-vim"]
 	path = .vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/editorconfig/syntastic.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -34,3 +31,18 @@
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = git@github.com:honza/vim-snippets.git
+[submodule ".vim/bundle/pythoncomplete"]
+	path = .vim/bundle/pythoncomplete
+	url = git@github.com:vim-scripts/pythoncomplete.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".vim/bundle/vim-unimpaired"]
+	path = .vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule ".vim/bundle/vim-gnupg"]
+	path = .vim/bundle/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

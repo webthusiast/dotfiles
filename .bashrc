@@ -21,12 +21,15 @@ set -u
 
 # Aliasses
 [[ $OSTYPE =~ darwin ]] && color='-G' || color='--color'
-[[ $OSTYPE =~ darwin ]] && alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+[[ $OSTYPE =~ darwin ]] && alias screensaver='/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 alias ls="ls -F $color"
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
 alias lal='ls -al'
+alias history-sync='history -a; history -c; history -r'
+# alias history-sync='history -a; history -n'
+alias excuse='w3m -dump http://devexcuses.com/ | head -1 | say -v daniel'
 
 # Enable programmable completion features (you don't need to enable this, if it's already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
 if ! shopt -oq posix;
