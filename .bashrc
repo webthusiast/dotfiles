@@ -21,7 +21,7 @@ set -u
 
 # Aliasses
 [[ $OSTYPE =~ darwin ]] && color='-G' || color='--color'
-[[ $OSTYPE =~ darwin ]] && alias screensaver='/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
+[[ $OSTYPE =~ darwin ]] && alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 alias ls="ls -F $color"
 alias ll='ls -l'
 alias la='ls -a'
@@ -46,4 +46,4 @@ then . ~/.bashrc_local;
 fi
 
 # For Solarized
-export TERM="screen-256color"
+export TERM="screen-256color-bce"

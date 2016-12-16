@@ -6,3 +6,6 @@ export PATH="/usr/local/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH:
 
 # For Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
