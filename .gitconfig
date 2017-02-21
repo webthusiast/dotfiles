@@ -9,3 +9,5 @@
 	excludesfile = ~/.gitexclude
 [diff]
 	tool = vimdiff
+[pull]
+  rebase = true

@@ -71,6 +71,9 @@ imap <LocalLeader>date     <C-R>=strftime('%Y-%m-%d')<CR>
 imap <LocalLeader>time     <C-R>=strftime('%T')<CR>
 imap <LocalLeader>datetime <C-R>=strftime('%Y-%m-%d %T')<CR>
 
+" smiley's (see http://unicode.org/emoji/charts/full-emoji-list.html)
+digraph :) 128578
+
 " autocommands
 autocmd Syntax * exec("set dict+=$VIMRUNTIME/syntax/".expand('<amatch>').'.vim')
 autocmd! BufRead,BufNewFile *.vcf  setfiletype vcard
@@ -79,6 +82,11 @@ autocmd! BufRead,BufNewFile *.otl  setfiletype otl
 autocmd! BufRead,BufNewFile *.less setfiletype less
 autocmd! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,nginx.conf setfiletype nginx
 autocmd! BufRead,BufNewFile Vagrantfile setfiletype ruby
+
+" For netrw
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_liststyle=3
+let g:netrw_banner=0
 
 " For Pathogen
 execute pathogen#infect()
