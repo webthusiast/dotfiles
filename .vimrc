@@ -33,6 +33,8 @@ set number
 set autoindent
 set cindent
 set linebreak
+set nowrap
+set sidescroll=1
 
 set tabstop=2
 set shiftwidth=2
@@ -73,6 +75,16 @@ imap <LocalLeader>datetime <C-R>=strftime('%Y-%m-%d %T')<CR>
 
 " smiley's (see http://unicode.org/emoji/charts/full-emoji-list.html)
 digraph :) 128578
+digraph ;) 128521
+digraph :P 128523
+digraph :o 128558
+digraph :( 9785
+digraph ;( 128546
+digraph ++ 128077  " thumbs up
+digraph -- 128078  " thumbs down
+digraph [] 9744    " checkbox empty
+digraph [+ 9745    " checkbox checked
+digraph [- 9746    " checkbox crossed
 
 " autocommands
 autocmd Syntax * exec("set dict+=$VIMRUNTIME/syntax/".expand('<amatch>').'.vim')
@@ -91,14 +103,20 @@ let g:netrw_banner=0
 " For Pathogen
 execute pathogen#infect()
 
+" For bash
+" See :help ft-bash-syntax
+let g:is_bash	= 1
+
 set background=light
 colorscheme solarized
 " Make IncSearch stand out a bit more (identical to solarized's standard Search highlighting)
 exe "hi! IncSearch term=NONE,reverse cterm=NONE,reverse ctermfg=3 ctermbg=NONE"
 
 " For specific file types
+autocmd FileType html setlocal sw=1 ts=1 et
+autocmd FileType javascript setlocal sw=2 ts=2 et " includeexpr=substitute(v:fname,'$','.js','')
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType markdown setlocal ts=2 sw=2 et
+autocmd FileType markdown setlocal ts=2 sw=2 et wrap
 autocmd FileType rst setlocal ft=rest
 autocmd FileType html setlocal ts=1 sw=1 et
 

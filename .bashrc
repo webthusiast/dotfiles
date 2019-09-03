@@ -1,6 +1,8 @@
 # Executed for interactive non-login shells.
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
+. ~/.bash_functions
+
 # A command name that is the name of a directory is executed as if it were the argument to the cd command.
 shopt -s autocd &> /dev/null
 
@@ -16,8 +18,8 @@ shopt -s histappend
 # Don't notify of mail
 shopt -u mailwarn
 
-# Break when an undefined env var is used.
-set -u
+# Let readline handle ^S (see https://stackoverflow.com/a/791800/487598)
+stty -ixon
 
 # Disable XON, XOFF flow control (so that ^s searches forward)
 stty -ixon
@@ -49,3 +51,9 @@ fi
 
 # For Solarized
 export TERM="screen-256color-bce"
+
+# For python
+export PATH="$(pyenv root)/shims:$PATH"
+
+# For node
+export PATH="$(nave use 12.7.0 eval 'echo $NAVEPATH' 2>/dev/null):$PATH"

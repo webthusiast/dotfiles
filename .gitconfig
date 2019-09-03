@@ -13,3 +13,10 @@
   rebase = true
 [include]
   path = .gitconfig.local
+[credential]
+  helper = osxkeychain
+  # helper = cache --timeout 14400
+[merge]
+	conflictstyle = diff3
+[rebase]
+	autoStash = true

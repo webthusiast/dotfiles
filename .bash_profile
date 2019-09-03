@@ -2,12 +2,13 @@
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # Execute ~/.profile if it exists.
-if [ -f ~/.profile ];
-then . ~/.profile;
+if [ -f ~/.profile ]
+then . ~/.profile
 fi
 
 # For bash
-export PS1='\! \u@\h \W\$ '
+export PROMPT_COMMAND='r=$?; test 0 -eq $r || echo exit status: $r'
+export PS1='\[\e[1m\]!\! #\# \$$SHLVL j\j /${#DIRSTACK[@]} \W\$\[\e[0m\] '
 export HISTFILESIZE=1000000
 export HISTSIZE=1000000
 export HISTTIMEFORMAT='%F %T '
