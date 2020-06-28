@@ -1,13 +1,15 @@
 [user]
-	email = rdevries@thoughtworks.com
-	name = Roald de Vries
+  # see .gitconfig.local for email
+  name = Roald de Vries
 [push]
-	default = simple
+  default = simple
 [log]
-	decorate = true
+  decorate = true
 [core]
-	excludesfile = ~/.gitexclude
+  excludesfile = ~/.gitexclude
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [pull]
   rebase = true
+[include]
+  path = .gitconfig.local
