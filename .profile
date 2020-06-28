@@ -6,6 +6,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # For Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home
+export CLASSPATH=".:$HOME/lib/ST-4.0.8.jar"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
