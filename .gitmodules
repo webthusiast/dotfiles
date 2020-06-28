@@ -67,3 +67,24 @@
 [submodule ".vim/bundle/vimwiki"]
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule ".vim/bundle/async.vim"]
+	path = .vim/bundle/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule ".vim/bundle/stan-vim"]
+	path = .vim/bundle/stan-vim
+	url = https://github.com/eigenfoo/stan-vim
+[submodule ".vim/bundle/vim-jsx-pretty"]
+	path = .vim/bundle/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/bundle/vimoutliner"]
+	path = .vim/bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner.git
+[submodule ".vim/bundle/vim-bazel"]
+	path = .vim/bundle/vim-bazel
+	url = https://github.com/bazelbuild/vim-bazel.git
+[submodule ".vim/bundle/vim-maktaba"]
+	path = .vim/bundle/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule ".vim/bundle/vim-capslock"]
+	path = .vim/bundle/vim-capslock
+	url = https://github.com/tpope/vim-capslock.git
