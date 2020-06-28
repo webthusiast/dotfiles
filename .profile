@@ -2,10 +2,10 @@
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # For homebrew
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH:~/go/bin:~/.local/bin/"
 
 # For Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
 export CLASSPATH=".:$HOME/lib/ST-4.0.8.jar"
 
 export LC_ALL=en_US.UTF-8
