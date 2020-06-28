@@ -9,14 +9,16 @@
   excludesfile = ~/.gitexclude
 [diff]
   tool = vimdiff
+  algorithm = patience
 [pull]
   rebase = true
-[include]
-  path = .gitconfig.local
 [credential]
   helper = osxkeychain
   # helper = cache --timeout 14400
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
+  tool = vimdiff
 [rebase]
-	autoStash = true
+  autoStash = true
+[include]
+  path = .gitconfig.local
