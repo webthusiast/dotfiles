@@ -19,6 +19,9 @@ shopt -u mailwarn
 # Break when an undefined env var is used.
 set -u
 
+# Disable XON, XOFF flow control (so that ^s searches forward)
+stty -ixon
+
 # Aliasses
 [[ $OSTYPE =~ darwin ]] && color='-G' || color='--color'
 [[ $OSTYPE =~ darwin ]] && alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
