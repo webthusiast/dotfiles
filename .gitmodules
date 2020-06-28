@@ -49,6 +49,21 @@
 [submodule ".vim/bundle/paredit.vim"]
 	path = .vim/bundle/paredit.vim
 	url = https://github.com/vim-scripts/paredit.vim
+[submodule ".vim/bundle/vim-sexp-mappings-for-regular-people"]
+	path = .vim/bundle/vim-sexp-mappings-for-regular-people
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
+[submodule ".vim/bundle/vim-sexp"]
+	path = .vim/bundle/vim-sexp
+	url = https://github.com/guns/vim-sexp
+[submodule ".vim/bundle/coconut.vim"]
+	path = .vim/bundle/coconut.vim
+	url = https://github.com/manicmaniac/coconut.vim
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/bundle/vim-antlr"]
+	path = .vim/bundle/vim-antlr
+	url = git@github.com:jrozner/vim-antlr.git
 [submodule ".vim/bundle/vimwiki"]
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
