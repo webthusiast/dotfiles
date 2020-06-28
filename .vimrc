@@ -35,6 +35,7 @@ set cindent
 set linebreak
 set nowrap
 set sidescroll=1
+set backspace=eol
 
 set tabstop=2
 set shiftwidth=2
@@ -122,6 +123,7 @@ autocmd FileType html setlocal ts=1 sw=1 et
 
 " For vimwiki
 let g:vimwiki_list = [{'path': '~/Projects/vimwiki/', 'path_html': '~/Projects/vimwiki/public_html/', 'auto_export': 1}]
+let g:vimwiki_folding = 'list'
 
 " For entering a lot of text
 iabbrev lorem1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -133,3 +135,5 @@ iabbrev lorem6 Cras nec metus pulvinar sem tempor hendrerit. Class aptent taciti
 iabbrev lorem7 Curabitur urna tellus, aliquam vitae, ultrices eget, vehicula nec, diam. Integer elementum, felis non faucibus euismod, erat massa dictum eros, eu ornare ligula tortor et mauris. Cras molestie magna in nibh. Aenean et tellus. Fusce adipiscing commodo erat. In eu justo. Nulla dictum, erat sed blandit venenatis, arcu dolor molestie dolor, vitae congue orci risus a nulla. Pellentesque sit amet arcu. In mattis laoreet enim. Pellentesque id augue et arcu blandit tincidunt. Pellentesque elit ante, rhoncus quis, dapibus sit amet, tincidunt eu, nibh. In imperdiet. Nunc lectus neque, commodo eget, porttitor quis, fringilla quis, purus.
 iabbrev lorem8 Duis sagittis dignissim eros. In sit amet lectus. Fusce lacinia mauris vitae nisl interdum condimentum. Etiam in magna ac nibh ultrices vehicula. Maecenas commodo facilisis lectus. Praesent sed mi. Phasellus ipsum. Donec quis tellus id lectus faucibus molestie. Praesent vel ligula. Nam venenatis neque quis mauris. Proin felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. Nullam et augue vitae nunc tristique vehicula. Suspendisse eget elit. Duis adipiscing dui non quam.
 iabbrev lorem9 Duis posuere tortor sit amet est iaculis egestas. Ut at magna. Etiam dui nisi, blandit quis, fermentum vitae, auctor vel, sem. Cras et leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin luctus, odio eu porttitor adipiscing, ante elit tristique tortor, sit amet malesuada tortor nisi sit amet neque. Praesent rhoncus eros non velit. Pellentesque mattis. Sed sit amet ante. Mauris ac nibh eget risus volutpat tempor. Praesent volutpat sollicitudin dui. Sed in tellus id urna viverra commodo. Vestibulum enim felis, interdum non, sollicitudin in, posuere a, sem. Cras nibh.
+
+try | source ~/.vimrc.local | catch | endtry
