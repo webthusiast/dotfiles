@@ -58,7 +58,7 @@ set complete+=k
 set completeopt=menu
 
 " For using enter instead of esc.
-Customize
+" Customize
 
 " For making Y work similar to C and D.
 nnoremap Y y$
@@ -100,6 +100,7 @@ exe "hi! IncSearch term=NONE,reverse cterm=NONE,reverse ctermfg=3 ctermbg=NONE"
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType markdown setlocal ts=2 sw=2 et
 autocmd FileType rst setlocal ft=rest
+autocmd FileType html setlocal ts=1 sw=1 et
 
 " For vimwiki
 let g:vimwiki_list = [{'path': '~/Projects/vimwiki/', 'path_html': '~/Projects/vimwiki/public_html/', 'auto_export': 1}]
