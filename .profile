@@ -2,7 +2,7 @@
 # See http://www.gnu.org/software/bash/manual/bashref.html#Bash-Startup-Files
 
 # For MacPorts and homebrew
-export PATH="/usr/local/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH:/usr/sbin:./node_modules/.bin"
+export PATH="/usr/local/bin:$PATH"
 
 # For Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home

@@ -29,8 +29,6 @@ alias lla='ls -al'
 alias lal='ls -al'
 alias cutcols='cut -c -$COLUMNS'
 alias history-sync='history -a; history -c; history -r'
-# alias history-sync='history -a; history -n'
-alias excuse='w3m -dump http://devexcuses.com/ | head -1 | say -v daniel'
 
 # Enable programmable completion features (you don't need to enable this, if it's already enabled in /etc/bash.bashrc and /etc/profile sources /etc/bash.bashrc).
 if ! shopt -oq posix;
