@@ -19,6 +19,7 @@
 !/Makefile
 !/README.md
 !/manual-requirements.txt
+!/supervisord.conf
 
 .vim/.VimballRecord
 .vim/.netrwhist
