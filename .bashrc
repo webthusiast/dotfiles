@@ -19,8 +19,6 @@ shopt -s histappend
 shopt -u mailwarn
 
 # Let readline handle ^S (see https://stackoverflow.com/a/791800/487598)
-stty -ixon
-
 # Disable XON, XOFF flow control (so that ^s searches forward)
 stty -ixon
 
@@ -56,4 +54,4 @@ export TERM="screen-256color-bce"
 export PATH="$(pyenv root)/shims:$PATH"
 
 # For node
-export PATH="$(nave use 12.7.0 eval 'echo $NAVEPATH' 2>/dev/null):$PATH"
+export PATH="$(nave use lts eval 'echo $NAVEPATH' 2>/dev/null):$PATH"

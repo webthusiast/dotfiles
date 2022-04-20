@@ -95,6 +95,7 @@ autocmd! BufRead,BufNewFile *.otl  setfiletype otl
 autocmd! BufRead,BufNewFile *.less setfiletype less
 autocmd! BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,nginx.conf setfiletype nginx
 autocmd! BufRead,BufNewFile Vagrantfile setfiletype ruby
+autocmd! BufRead,BufNewFile Jenkinsfile setfiletype groovy
 
 " For netrw
 let g:netrw_list_hide=netrw_gitignore#Hide()
@@ -116,14 +117,11 @@ exe "hi! IncSearch term=NONE,reverse cterm=NONE,reverse ctermfg=3 ctermbg=NONE"
 " For specific file types
 autocmd FileType html setlocal sw=1 ts=1 et
 autocmd FileType javascript setlocal sw=2 ts=2 et " includeexpr=substitute(v:fname,'$','.js','')
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType markdown setlocal ts=2 sw=2 et wrap
+autocmd FileType rmd setlocal ts=2 sw=2 et wrap
 autocmd FileType rst setlocal ft=rest
 autocmd FileType html setlocal ts=1 sw=1 et
-
-" For vimwiki
-let g:vimwiki_list = [{'path': '~/Projects/vimwiki/', 'path_html': '~/Projects/vimwiki/public_html/', 'auto_export': 1}]
-let g:vimwiki_folding = 'list'
 
 " For entering a lot of text
 iabbrev lorem1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

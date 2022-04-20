@@ -8,5 +8,8 @@ export PATH="/usr/local/bin:$PATH:~/go/bin:~/.local/bin/"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
 export CLASSPATH=".:$HOME/lib/ST-4.0.8.jar"
 
+# For pyenv
+export PYTHON_CONFIGURE_OPTS="--enable-shared" # for reticulate
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

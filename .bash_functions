@@ -4,6 +4,7 @@ dim() {
   hs -c 'hs.brightness.set(0)'
 }
 
-vimwiki() {
-  vim -c VimwikiUISelect
+ocr() {
+  screencapture -i /tmp/tesseract.png
+  tesseract /tmp/tesseract.png stdout | tr -d '\f' | tr '\n' ' '
 }
