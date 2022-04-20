@@ -8,13 +8,13 @@
 !/.gitignore
 !/.gitmodules
 !/.hammerspoon
+!/.hammerspoon/**
 !/.inputrc
 !/.profile
 !/.slate
 !/.tmux.conf
 !/.vim
-!/.vim/*
-!/.vim/*/*
+!/.vim/**
 !/.vimrc
 !/Makefile
 !/README.md

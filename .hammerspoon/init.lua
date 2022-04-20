@@ -1,6 +1,10 @@
 -- Getting started: https://www.hammerspoon.org/go/
 -- API reference: https://www.hammerspoon.org/docs/index.html
 
+
+hs.loadSpoon("ShiftIt")
+spoon.ShiftIt:bindHotkeys({})
+
 require("hs.ipc")
 hs.ipc.cliInstall()
 
