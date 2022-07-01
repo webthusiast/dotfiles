@@ -50,8 +50,5 @@ fi
 # For Solarized
 export TERM="screen-256color-bce"
 
-# For python
-export PATH="$(pyenv root)/shims:$PATH"
-
 # For node
 export PATH="$(nave use lts eval 'echo $NAVEPATH' 2>/dev/null):$PATH"

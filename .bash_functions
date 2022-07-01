@@ -8,3 +8,7 @@ ocr() {
   screencapture -i /tmp/tesseract.png
   tesseract /tmp/tesseract.png stdout | tr -d '\f' | tr '\n' ' '
 }
+
+r() {
+  ~/Projects/Roche/do "$@"
+}
