@@ -1,7 +1,7 @@
 arch
 arviz
 coconut
-h5py
+# h5py
 html5lib
 ipysheet
 ipywidgets

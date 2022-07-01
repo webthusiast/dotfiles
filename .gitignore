@@ -18,7 +18,7 @@
 !/.vimrc
 !/Makefile
 !/README.md
-!/manual-requirements.txt
+!/requirements.in
 !/supervisord.conf
 
 .vim/.VimballRecord
